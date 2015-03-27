@@ -1,11 +1,12 @@
 class HomeController < ApplicationController
 
   def index
-    @items=Item.all
+    @items=Item.all.order(:id)
   end
 
 def control
-  @items=Item.all
+  @items=Item.all.order(:id)
 end
+
 
 end

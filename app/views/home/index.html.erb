@@ -16,10 +16,10 @@
 <%= item.name %>
     </td>
     <% if item.on==true%>
-  <td class='button'> <img  width = '10%' src='on.png'> </td>
+  <td> <img  width = '10%' src='on.png' class='button' id=<%=item.id%>> </td>
     <td>
       <% else %>
-      <td class='button'> <img  width = '10%' src='off.png'> </td>
+      <td> <img  width = '10%' src='off.png' class='button' id=<%=item.id%>> </td>
       <%end%>
     </td>
   </tr>
