@@ -1,0 +1,27 @@
+<h1  id='header'>   ||*-  Home Automation System - Mission Control   -*|| </h1>
+
+<%   if !user_signed_in? %>
+<%= button_to "Log In", new_user_session_path, :method => :get, :form_class => "log_button", :id=>'log_in_button' %>
+<% else %>
+<%= button_to "Log Out", destroy_user_session_path, :method => :delete, :form_class => "log_button", :id=>'log_out_button'  %>
+<% end %>
+  <table width='80%'>
+    <tr>
+      <th>Item</th>
+      <th>Status</th>
+    </tr>
+  <% @items.each do |item| %>
+  <tr>
+    <td>
+<%= item.name %>
+    </td>
+    <% if item.on==true%>
+  <td class='button'> <img  width = '10%' src='on.png'> </td>
+    <td>
+      <% else %>
+      <td class='button'> <img  width = '10%' src='off.png'> </td>
+      <%end%>
+    </td>
+  </tr>
+<% end %>
+  </table>

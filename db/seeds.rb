@@ -5,3 +5,12 @@
 #
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
+Item.create(name: 'Lounge Lights', on: false, comment: "none", img: 'none')
+Item.create(name: 'Hall Lights', on: false, comment: "none", img: 'none')
+Item.create(name: 'Bedroom Lights', on: false, comment: "none", img: 'none')
+Item.create(name: 'Outside Lights', on: false, comment: "none", img: 'none')
+Item.create(name: 'Heatpump', on: false, comment: "none", img: 'none')
+Item.create(name: 'Spa Pool', on: false, comment: "none", img: 'none')
+Item.create(name: 'Car Charger', on: false, comment: "none", img: 'none')
+Item.create(name: 'Hot Water Cylinder', on: false, comment: "none", img: 'none')
+Item.create(name: 'Oven', on: false, comment: "none", img: 'none')
