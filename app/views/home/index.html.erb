@@ -1,11 +1,11 @@
-<h1  id='header'>   ||*-  Home Automation System - Mission Control   -*|| </h1>
+<img height='100px' width='100%' src='header.png'>
 
 <%   if !user_signed_in? %>
 <%= button_to "Log In", new_user_session_path, :method => :get, :form_class => "log_button", :id=>'log_in_button' %>
 <% else %>
 <%= button_to "Log Out", destroy_user_session_path, :method => :delete, :form_class => "log_button", :id=>'log_out_button'  %>
 <% end %>
-  <table width='80%'>
+  <table width='90%'>
     <tr>
       <th>Item</th>
       <th>Status</th>
