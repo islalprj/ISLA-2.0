@@ -1,0 +1,27 @@
+<img height='100px' width='100%' src='header.png'>
+
+<%   if !user_signed_in? %>
+<%= button_to "Log In", new_user_session_path, :method => :get, :form_class => "log_button", :id=>'log_in_button' %>
+<% else %>
+<%= button_to "Log Out", destroy_user_session_path, :method => :delete, :form_class => "log_button", :id=>'log_out_button'  %>
+<% end %>
+  <table width='90%'>
+    <tr>
+      <th>Item</th>
+      <th>Status</th>
+    </tr>
+  <% @items.each do |item| %>
+  <tr>
+    <td>
+<%= item.name %>
+    </td>
+    <% if item.on==true%>
+  <td> <img  width = '10%' src='on.png' class='button' id=<%=item.id%>> </td>
+    <td>
+      <% else %>
+      <td> <img  width = '10%' src='off.png' class='button' id=<%=item.id%>> </td>
+      <%end%>
+    </td>
+  </tr>
+<% end %>
+  </table>
