@@ -8,5 +8,8 @@ def control
   @items=Item.all.order(:id)
 end
 
+def monitor
+end
+
 
 end

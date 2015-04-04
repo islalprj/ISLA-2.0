@@ -1,56 +1,34 @@
 <style>body {background-color:#1D1145; color: white}</style>
+<div id='whole' width="100%">
+<table>
+<h1 id="header" > HOME PAGE USER SIGNED IN </h1>
+<tr id="top_row">
+  <td>  <script type="text/javascript"
+    src="http://localtimes.info/clock.php?continent=Oceania&country=New Zealand&city=Wellington&cp1_Hex=19ea28&cp2_Hex=0e0303&cp3_Hex=000000&fwdt=312&ham=0&hbg=0&hfg=0&sid=0&mon=0&wek=0&wkf=0&sep=0&widget_number=1000">
+    </script></td>
 
-<h1 align='center'> HOME PAGE USER SIGNED IN </h1>
-
-<div id='whole'>
-  <div id='header'>
-    <div id='1'  style="vertical-align: middle; display: inline-block; width:28%">
-      <div style="margin: 15px 0px 0px; display: inline-block; text-align: center; width: 312px;"><noscript>
-        <div style="display: inline-block; padding: 2px 4px; margin: 0px 0px 5px; border: 1px solid rgb(204, 204, 204);
-        text-align: center; background-color: rgb(14, 3, 3);"><a href="http://localtimes.info/Oceania/New_Zealand/Wellington/"
-        style="text-decoration: none; font-size: 13px; color: rgb(25, 234, 40);"><img src="http://localtimes.info/images/countries/nz.png"=""
-        border=0="" style="border:0;margin:0;padding:0"=""> Wellington</a></div></noscript>
-        <script type="text/javascript"
-        src="http://localtimes.info/clock.php?continent=Oceania&country=New Zealand&city=Wellington&cp1_Hex=19ea28&cp2_Hex=0e0303&cp3_Hex=000000&fwdt=312&ham=0&hbg=0&hfg=0&sid=0&mon=0&wek=0&wkf=0&sep=0&widget_number=1000">
-        </script>
-        </div>
-    </div>
-
-    <div id='2' style="vertical-align: middle; display: inline-block; width:37%">
-      <div id='weather'>
-  <a href="http://www.accuweather.com/en/nz/wellington/250938/weather-forecast/250938" class="aw-widget-legal">
+  <td><div id='weather'>
+<a href="http://www.accuweather.com/en/nz/wellington/250938/weather-forecast/250938" class="aw-widget-legal">
 </a><div id="awcc1427848865754" class="aw-widget-current"  data-locationkey="" data-unit="c" data-language="en-us" data-useip="true"
 data-uid="awcc1427848865754"></div><script type="text/javascript" src="http://oap.accuweather.com/launch.js"></script>
+</div></td>
+
+  <td><div><img src='http://a1.mzstatic.com/us/r1000/045/Purple/10/1e/b9/mzl.eryhxbkg.1024x1024-65.jpg' width="300" height = "120" ></img>
+    <audio controls autoplay style="display:block"> <source src="http://lb.zenfm.be/zenfm.mp3" type="audio/mpeg"> Old Broswer Failure</audio></td>
+</div></tr>
+
+<tr id="middle">
+  <td>  <iframe src="https://touch.trademe.co.nz/" width="100%" height="600"></iframe></td>
+  <td></td>
+  <td><iframe src="http://30boxes.com/widget/8490214/JayDavis/522b524c31949faae63d84fb3a37e361/1/" width="100%" height="600"></iframe></td>
+
+
+</tr>
+
+<tr id="navigation">
+  <td><%= link_to image_tag("http://auclc.com/Home_Button.png"), {:controller => 'home', :action => "index" } %></td>
+  <td><%= link_to image_tag("https://cdn2.iconfinder.com/data/icons/plump-by-zerode_/256/Control-Panel-icon.png"), {:controller => 'home', :action => "control" } %></td>
+  <td><%= link_to image_tag("http://images.clipartpanda.com/gauge-clipart-gauge-for-temperature-3-hi.png", :width=>250), {:controller => 'home', :action => "monitor" } %></td>
+</tr>
+</table>
 </div>
-    </div>
-
-    <div id='3' style="vertical-align: middle; display: inline-block; width:30%">
-    <div style="display: block">  <img src='http://a1.mzstatic.com/us/r1000/045/Purple/10/1e/b9/mzl.eryhxbkg.1024x1024-65.jpg' width="300" height = "120" ></img>
-      <audio controls autoplay> <source src="http://lb.zenfm.be/zenfm.mp3" type="audio/mpeg"> Old Broswer Failure</audio>
-    </div>
-  </div>
-
-<div id='middle'>
-  <div id='4' style="display: inline-block">
-    <iframe src="https://touch.trademe.co.nz/" width="100%" height="600"></iframe>
-</div>
-
-  <div id='5' style="display: inline-block">
-    <iframe src="https://snt151.mail.live.com/default.aspx?id=64855&owa=1&owasuffix=owa%2f" width="100%" height="600"></iframe>
-</div>
-
-<div id='6' style="display: inline-block">
-  <iframe src="http://30boxes.com/widget/8490214/JayDavis/522b524c31949faae63d84fb3a37e361/1/" width="100%" height="600"></iframe>
-</div>
-    </div>
-
-
-      </div>
-
-  </div>
-<div>
-
-
-</div>
-
-<%= link_to image_tag("http://icons.iconseeker.com/png/fullsize/ivista-2-os-x-icons/arrow-right-3.png"), {:controller => 'home', :action => "control" } %>

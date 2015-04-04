@@ -6,5 +6,6 @@ Rails.application.routes.draw do
 patch '/items/:id/toggle', to: 'items#toggle'
 
 get '/control', to: 'home#control'
+get '/monitor', to: 'home#monitor'
 
 end

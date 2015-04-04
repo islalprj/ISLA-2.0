@@ -24,4 +24,9 @@
     </td>
   </tr>
 <% end %>
+<tr id="navigation">
+  <td><%= link_to image_tag("http://auclc.com/Home_Button.png"), {:controller => 'home', :action => "index" } %></td>
+  <td><%= link_to image_tag("https://cdn2.iconfinder.com/data/icons/plump-by-zerode_/256/Control-Panel-icon.png"), {:controller => 'home', :action => "control" } %></td>
+  <td><%= link_to image_tag("http://images.clipartpanda.com/gauge-clipart-gauge-for-temperature-3-hi.png", :width=>250), {:controller => 'home', :action => "monitor" } %></td>
+</tr>
   </table>
