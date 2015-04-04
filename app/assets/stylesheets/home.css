@@ -13,7 +13,10 @@ table {
 }
 .middle{
 height:70%;
-
+}
+#info1{
+  background-color: black;
+  color: red;
 }
 
 table, th, td {
