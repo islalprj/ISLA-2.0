@@ -1,6 +1,5 @@
 body {
-/*  background-color: #B9F200; */
-background: radial-gradient(circle, #CAF836,  #B9F200,#94C200,#BEF800);
+background: radial-gradient(circle, #2DDEF7,  #34B3F8,#399AF8,#4949F9);
   color: black;
 font-family: helvetica;
 font-size: 20pt
@@ -8,10 +7,19 @@ font-size: 20pt
 
 table {
     border-collapse: collapse;
+    width:90%;
+    text-align:center;
+    align-content: center;
+}
+.middle{
+height:70%;
+
 }
 
 table, th, td {
-    border: 1px solid #739600;
+    border: 0px solid #9797FA;
+    border-radius: 55px;
+
 }
 h1 {
   text-align: center;
