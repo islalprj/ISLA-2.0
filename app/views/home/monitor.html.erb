@@ -1,3 +1,8 @@
+<%   if !user_signed_in? %>
+<%= button_to "Log In", new_user_session_path, :method => :get, :form_class => "log_button", :id=>'log_in_button' %>
+<% else %>
+<%= button_to "Log Out", destroy_user_session_path, :method => :delete, :form_class => "log_button", :id=>'log_out_button'  %>
+<% end %>
 <table>
   <tr id="info1">
     <td>lunch is gonna be cheese</td>

@@ -100,6 +100,11 @@ infowindow3.open(map,marker3);
 
   </script>
   <div id="heading"><br><h1 align='center'> ISLA Traffic Monitoring system</h1><br>  </div>
+  <%   if !user_signed_in? %>
+  <%= button_to "Log In", new_user_session_path, :method => :get, :form_class => "log_button", :id=>'log_in_button' %>
+  <% else %>
+  <%= button_to "Log Out", destroy_user_session_path, :method => :delete, :form_class => "log_button", :id=>'log_out_button'  %>
+  <% end %>
 <div id="map-canvas"></div>
 <table><tr id="navigation">
   <td height="100px"><%= link_to image_tag("http://auclc.com/Home_Button.png", :height=>100), {:controller => 'home', :action => "index" } %></td>
