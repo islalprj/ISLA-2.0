@@ -25,8 +25,10 @@
   </tr>
 <% end %>
 <tr id="navigation">
-  <td><%= link_to image_tag("http://auclc.com/Home_Button.png"), {:controller => 'home', :action => "index" } %></td>
-  <td><%= link_to image_tag("https://cdn2.iconfinder.com/data/icons/plump-by-zerode_/256/Control-Panel-icon.png"), {:controller => 'home', :action => "control" } %></td>
-  <td><%= link_to image_tag("http://images.clipartpanda.com/gauge-clipart-gauge-for-temperature-3-hi.png", :width=>250), {:controller => 'home', :action => "monitor" } %></td>
-</tr>
+  <td height="100px"><%= link_to image_tag("http://auclc.com/Home_Button.png", :height=>100), {:controller => 'home', :action => "index" } %></td>
+  <td height="100px"><%= link_to image_tag("https://cdn2.iconfinder.com/data/icons/plump-by-zerode_/256/Control-Panel-icon.png", :height=>100), {:controller => 'home', :action => "control" } %></td>
+  <td height="100px"><%= link_to image_tag("http://images.clipartpanda.com/gauge-clipart-gauge-for-temperature-3-hi.png", :height=>100, :width=>100), {:controller => 'home', :action => "monitor" } %></td>
+  <td height="100px"><%= link_to image_tag("http://png-2.findicons.com/files/icons/2320/x_mac_general/400/traffic_lights.png",:height=>100), {:controller => 'home', :action => "traffic" } %></td>
+  <td height="100px"><%= link_to image_tag("https://lh4.ggpht.com/ezNJTCkXJ1EDq7Qspr56GIhT5qg_yzNIzHfKmRHZOC-ZCaLK7VFbRLRuEoPCi10-3Q=w300", :height=>100), {:controller => 'home', :action => "cams" } %></td>
+  </tr>
   </table>

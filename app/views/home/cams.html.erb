@@ -1,0 +1,111 @@
+
+  <link rel="icon" type="image/ico"  href="favicon.ico">
+  <title>Cam Spider - Crawling</title>
+  <link rel="stylesheet" type="text/css" href="index.css">
+  <style type="text/css">
+    html, body, #map-canvas { height: 90%; margin: 0; padding: 0;}
+  </style>
+  <script type="text/javascript"
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAzWKC-aUMV7yZKIVLmvbztbuZX2rmSF-A">
+  </script>
+  <script type="text/javascript">
+  window.onload=(function initialize() {
+      var mapOptions = {
+        center: { lat: -41.288, lng: 174.777},
+        zoom: 11
+      };
+    var map = new google.maps.Map(document.getElementById('map-canvas'), mapOptions);
+
+    var myLatlng = new google.maps.LatLng(-41.227951,174.808116);
+    var marker = new google.maps.Marker({
+      icon: 'https://cdn4.iconfinder.com/data/icons/VISTA/computer_gadgets/png/64/web_camera.png',
+      position: myLatlng,
+      map: map,
+      title:"Hello World!"
+    });
+
+    var myLatlng2 = new google.maps.LatLng(-41.224,174.86);
+    var marker2 = new google.maps.Marker({
+      icon: 'https://cdn4.iconfinder.com/data/icons/VISTA/computer_gadgets/png/64/web_camera.png',
+      position: myLatlng2,
+      map: map,
+      title:"Hello World!"
+    });
+
+    var myLatlng3 = new google.maps.LatLng(-41.276291,174.773064);
+    var marker3 = new google.maps.Marker({
+      icon: 'https://cdn4.iconfinder.com/data/icons/VISTA/computer_gadgets/png/64/web_camera.png',
+      position: myLatlng3,
+      map: map,
+      title:"Hello World!"
+    });
+
+    var contentString = '<div id="content">'+
+         '<div id="siteNotice">'+
+         '</div>'+
+         '<h1 id="firstHeading" class="firstHeading">ISLA - Traffic Cam</h1>'+
+         '<div id="bodyContent">'+
+         '<img border="1" src="http://www.trafficnz.info/camera/226.jpg">'+
+         '<p>Here is how <b>Ngauranga Gorge</b> is looking </p>'+
+         '</div>'+
+         '</div>';
+
+     var infowindow = new google.maps.InfoWindow({
+         content: contentString
+     });
+
+     var contentString2 = '<div id="content">'+
+          '<div id="siteNotice">'+
+          '</div>'+
+          '<h1 id="firstHeading" class="firstHeading">ISLA - Traffic Cam</h1>'+
+          '<div id="bodyContent">'+
+          '<img border="1" src="http://www.trafficnz.info/camera/232.jpg">'+
+          '<p>Here is how <b>Petone Off Ramp SH2</b> is looking </p>'+
+          '</div>'+
+          '</div>';
+
+      var infowindow2 = new google.maps.InfoWindow({
+          content: contentString2
+      });
+
+      var contentString3 = '<div id="content">'+
+           '<div id="siteNotice">'+
+           '</div>'+
+           '<h1 id="firstHeading" class="firstHeading">ISLA - Traffic Cam</h1>'+
+           '<div id="bodyContent">'+
+           '<img border="1" src="http://www.trafficnz.info/camera/230.jpg">'+
+           '<p>Here is how <b>Terrace Tunnel exit</b> is looking </p>'+
+           '</div>'+
+           '</div>';
+
+       var infowindow3 = new google.maps.InfoWindow({
+           content: contentString3
+       });
+
+
+     google.maps.event.addListener(marker, 'click', function() {
+  infowindow.open(map,marker);
+});
+
+google.maps.event.addListener(marker2, 'click', function() {
+infowindow2.open(map,marker2);
+});
+
+google.maps.event.addListener(marker3, 'click', function() {
+infowindow3.open(map,marker3);
+});
+
+  })
+  google.maps.event.addDomListener(window, 'load', initialize);
+
+  </script>
+  <div id="heading"><br><h1 align='center'> ISLA Traffic Monitoring system</h1><br>  </div>
+<div id="map-canvas"></div>
+<table><tr id="navigation">
+  <td height="100px"><%= link_to image_tag("http://auclc.com/Home_Button.png", :height=>100), {:controller => 'home', :action => "index" } %></td>
+  <td height="100px"><%= link_to image_tag("https://cdn2.iconfinder.com/data/icons/plump-by-zerode_/256/Control-Panel-icon.png", :height=>100), {:controller => 'home', :action => "control" } %></td>
+  <td height="100px"><%= link_to image_tag("http://images.clipartpanda.com/gauge-clipart-gauge-for-temperature-3-hi.png", :height=>100, :width=>100), {:controller => 'home', :action => "monitor" } %></td>
+  <td height="100px"><%= link_to image_tag("http://png-2.findicons.com/files/icons/2320/x_mac_general/400/traffic_lights.png",:height=>100), {:controller => 'home', :action => "traffic" } %></td>
+  <td height="100px"><%= link_to image_tag("https://lh4.ggpht.com/ezNJTCkXJ1EDq7Qspr56GIhT5qg_yzNIzHfKmRHZOC-ZCaLK7VFbRLRuEoPCi10-3Q=w300", :height=>100), {:controller => 'home', :action => "cams" } %></td>
+  </tr>
+</table>

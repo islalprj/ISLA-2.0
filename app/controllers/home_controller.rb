@@ -11,5 +11,11 @@ end
 def monitor
 end
 
+def cams
+end
+
+def traffic
+end
+
 
 end
