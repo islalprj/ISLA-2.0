@@ -1,3 +1,35 @@
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&appId=1421547268149102&version=v2.3";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+<script>
+  window.fbAsyncInit = function() {
+    FB.init({
+      appId      : '1421547268149102',
+      xfbml      : true,
+      version    : 'v2.3'
+    });
+  };
+
+  (function(d, s, id){
+     var js, fjs = d.getElementsByTagName(s)[0];
+     if (d.getElementById(id)) {return;}
+     js = d.createElement(s); js.id = id;
+     js.src = "//connect.facebook.net/en_US/sdk.js";
+     fjs.parentNode.insertBefore(js, fjs);
+   }(document, 'script', 'facebook-jssdk'));
+</script>
+<div
+  class="fb-like"
+  data-share="true"
+  data-width="450"
+  data-show-faces="true">
+</div>
+
 <style>body {background-color:#1D1145; color: white}</style>
 <div id='whole' width="100%">
 <table>
@@ -13,13 +45,15 @@
 data-uid="awcc1427848865754"></div><script type="text/javascript" src="http://oap.accuweather.com/launch.js"></script>
 </div></td>
 
-  <td><div><img src='http://a1.mzstatic.com/us/r1000/045/Purple/10/1e/b9/mzl.eryhxbkg.1024x1024-65.jpg' width="300" height = "120" ></img>
-    <audio controls autoplay style="display:block"> <source src="http://lb.zenfm.be/zenfm.mp3" type="audio/mpeg"> Old Broswer Failure</audio></td>
-</div></tr>
+  <td><div>
+
+    <img src='http://a1.mzstatic.com/us/r1000/045/Purple/10/1e/b9/mzl.eryhxbkg.1024x1024-65.jpg' width="300" height = "120" ></img>
+    <audio controls autoplay style="display:block"> <source src="http://lb.zenfm.be/zenfm.mp3" type="audio/mpeg"> Old Broswer Failure</audio>
+    </div></td></tr>
 
 <tr id="middle">
   <td>  <iframe src="https://touch.trademe.co.nz/" width="100%" height="600"></iframe></td>
-  <td></td>
+  <td> <iframe src= "https://api.spotify.com/v1/browse/new-releases"></iframe></td>
   <td><iframe src="http://30boxes.com/widget/8490214/JayDavis/522b524c31949faae63d84fb3a37e361/1/" width="100%" height="600"></iframe></td>
 
 
@@ -32,3 +66,4 @@ data-uid="awcc1427848865754"></div><script type="text/javascript" src="http://oa
 </tr>
 </table>
 </div>
+<div class="fb-login-button" data-max-rows="1" data-size="medium" data-show-faces="false" data-auto-logout-link="false"></div>
