@@ -50,6 +50,7 @@ Rails.application.configure do
   # when problems arise.
   config.logger = Logger.new(STDOUT)
   config.log_level = :info
+  OmniAuth.config.logger = config.logger
 
   # Prepend all log lines with the following tags.
   # config.log_tags = [ :subdomain, :uuid ]
@@ -80,4 +81,3 @@ Rails.application.configure do
   # Do not dump schema after migrations.
   config.active_record.dump_schema_after_migration = false
 end
-OmniAuth.config.logger = Rails.logger
