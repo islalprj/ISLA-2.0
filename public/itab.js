@@ -24,5 +24,5 @@ ready(function () {
 	document.getElementById('traffic').style.display = "block";
 	document.getElementById('cams').style.display = "block";
 	},10005);
-	
+
 })

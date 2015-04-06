@@ -2,14 +2,27 @@
 body{
    background-color: #649FB0;
 }
-
+header{
+    text-align:center;
+    color:#330C9F;
+    /*font-size:20px;*/
+}
 #jumbo{
 background-color:#649FB0;
 width: 1330px;
 height: 626px;
 border: 1px solid black;
 }
-
+.bigTabs{
+    border-radius: 25px;
+    text-align:center;
+    background:#330C9F;
+}
+.bottom{
+    border-radius: 25px;
+    text-align:center;
+    background:#330C9F;
+}
 #controller{
   display:none;
   margin-left:auto;
@@ -21,7 +34,7 @@ border: 1px solid black;
   height: 0;
   width: 1227px;
 }
-
+.breaker{height: 1em;}
 #weather{
   display:none;
   margin-left:auto;
@@ -40,7 +53,7 @@ border: 1px solid black;
   width: 0;
   border-right:50px solid #649Fe4;
   border-top: 50px solid transparent;
-  border-bottom: 50px solid transparent; 
+  border-bottom: 50px solid transparent;
   margin-left: 1279px;
   margin-top: -50px;
 }
@@ -51,7 +64,7 @@ border: 1px solid black;
   width: 0;
   border-left:50px solid #649Fe4;
   border-top: 50px solid transparent;
-  border-bottom: 50px solid transparent; 
+  border-bottom: 50px solid transparent;
   margin-left: 1px;
   margin-top: -621px;
 }
