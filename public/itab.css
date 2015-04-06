@@ -3,11 +3,19 @@ body{
    background-color: #649FB0;
 }
 
+#jumbo{
+background-color:#649FB0;
+width: 1330px;
+height: 626px;
+border: 1px solid black;
+}
+
+
 #fountainG{
 
 position:relative;
-margin-top: 250px;
-margin-left:250px;
+margin-top: 230px;
+margin-left:280px;
 width:414px;
 height:51px}
 
@@ -63,11 +71,11 @@ animation-delay:0.52s;
 
 #fountainG_1A{
 left:26px;
--moz-animation-delay:0.52s;
--webkit-animation-delay:0.52s;
--ms-animation-delay:0.52s;
--o-animation-delay:0.52s;
-animation-delay:0.52s;
+-moz-animation-delay:0.57s;
+-webkit-animation-delay:0.57s;
+-ms-animation-delay:0.57s;
+-o-animation-delay:0.57s;
+animation-delay:0.57s;
 }
 
 
