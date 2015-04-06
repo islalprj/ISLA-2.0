@@ -23,11 +23,7 @@
      fjs.parentNode.insertBefore(js, fjs);
    }(document, 'script', 'facebook-jssdk'));
 </script>
-<%   if !user_signed_in? %>
-<%= button_to "Log In", new_user_session_path, :method => :get, :form_class => "log_button", :id=>'log_in_button' %>
-<% else %>
-<%= button_to "Log Out", destroy_user_session_path, :method => :delete, :form_class => "log_button", :id=>'log_out_button'  %>
-<% end %>
+
 <div
   class="fb-like"
   data-share="true"
@@ -38,7 +34,6 @@
 <style>body {background-color:#1D1145; color: white}</style>
 <div id='whole' width="100%">
 <table>
-<h1 id="header" > HOME PAGE USER SIGNED IN </h1>
 <tr id="top_row">
   <td>  <script type="text/javascript"
     src="http://localtimes.info/clock.php?continent=Oceania&country=New Zealand&city=Wellington&cp1_Hex=19ea28&cp2_Hex=0e0303&cp3_Hex=000000&fwdt=312&ham=0&hbg=0&hfg=0&sid=0&mon=0&wek=0&wkf=0&sep=0&widget_number=1000">
@@ -58,7 +53,7 @@ data-uid="awcc1427848865754"></div><script type="text/javascript" src="http://oa
 
 <tr id="middle">
   <td>  <iframe src="https://touch.trademe.co.nz/" width="100%" height="600"></iframe></td>
-  <td> <iframe src= "https://play.spotify.com/artist/0qT79UgT5tY4yudH9VfsdT"></iframe></td>
+  <td> <iframe src= "https://www.googleapis.com/gmail/v1/users/userId/messages"></iframe></td>
   <td><iframe src="http://30boxes.com/widget/8490214/JayDavis/522b524c31949faae63d84fb3a37e361/1/" width="100%" height="600"></iframe></td>
 
 
