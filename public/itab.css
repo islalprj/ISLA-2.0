@@ -124,6 +124,15 @@ left:26px;
 animation-delay:0.57s;
 }
 
+#fountainG_1B{
+left:39px;
+-moz-animation-delay:0.61s;
+-webkit-animation-delay:0.61s;
+-ms-animation-delay:0.61s;
+-o-animation-delay:0.61s;
+animation-delay:0.61s;
+}
+
 
 #fountainG_2{
 left:52px;
@@ -141,6 +150,15 @@ left:72px;
 -ms-animation-delay:0.72s;
 -o-animation-delay:0.72s;
 animation-delay:0.72s;
+}
+
+#fountainG_2B{
+left:88px;
+-moz-animation-delay:0.75s;
+-webkit-animation-delay:0.75s;
+-ms-animation-delay:0.75s;
+-o-animation-delay:0.75s;
+animation-delay:0.75s;
 }
 
 #fountainG_3{
@@ -161,6 +179,15 @@ left:129px;
 animation-delay:0.845s;
 }
 
+#fountainG_3B{
+left:142px;
+-moz-animation-delay:0.8775s;
+-webkit-animation-delay:0.8775s;
+-ms-animation-delay:0.8775s;
+-o-animation-delay:0.8775s;
+animation-delay:0.8775s;
+}
+
 #fountainG_4{
 left:155px;
 -moz-animation-delay:0.91s;
@@ -178,6 +205,16 @@ left:181px;
 -o-animation-delay:0.975s;
 animation-delay:0.975s;
 }
+
+#fountainG_4B{
+left:194px;
+-moz-animation-delay:1.0075s;
+-webkit-animation-delay:1.0075s;
+-ms-animation-delay:1.0075s;
+-o-animation-delay:1.0075s;
+animation-delay:1.0075s;
+}
+
 
 #fountainG_5{
 left:207px;
@@ -197,6 +234,14 @@ left:233px;
 animation-delay:1.10s;
 }
 
+#fountainG_5B{
+left:246px;
+-moz-animation-delay:1.135s;
+-webkit-animation-delay:1.135s;
+-ms-animation-delay:1.135s;
+-o-animation-delay:1.135s;
+animation-delay:1.135s;
+}
 
 #fountainG_6{
 left:259px;
@@ -216,6 +261,15 @@ left:285px;
 animation-delay:1.235s;
 }
 
+#fountainG_6B{
+left:298px;
+-moz-animation-delay:1.2675s;
+-webkit-animation-delay:1.2675s;
+-ms-animation-delay:1.2675s;
+-o-animation-delay:1.2675s;
+animation-delay:1.2675s;
+}
+
 #fountainG_7{
 left:311px;
 -moz-animation-delay:1.3s;
@@ -232,6 +286,15 @@ left:323px;
 -ms-animation-delay:1.36s;
 -o-animation-delay:1.36s;
 animation-delay:1.36s;
+}
+
+#fountainG_7B{
+left:330px;
+-moz-animation-delay:1.395s;
+-webkit-animation-delay:1.395s;
+-ms-animation-delay:1.395s;
+-o-animation-delay:1.395s;
+animation-delay:1.395s;
 }
 
 #fountainG_8{
