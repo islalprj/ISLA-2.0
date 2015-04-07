@@ -12,14 +12,15 @@ html {
 
 .css-class,
 .css-class-add.css-class-add-active {
-  color: red;
-  font-size:3em;
+  color: #B4A3E4;
+  font-size:2em;
+  /*width:10em;*/
 }
 
-.css-class-remove.css-class-remove-active {
-  font-size:1.0em;
+/*.css-class-remove.css-class-remove-active {
+  font-size:2.0em;
   color:black;
-}
+}*/
 body {
   height: 100%;
   width: 100%;
@@ -57,7 +58,7 @@ header{
   text-align:center;
   background:#330C9F;
   color:#B4A3E4;
-  max-height:40em;
+  /*max-height:40em;*/
 }
 .bottom{
   margin-left:2%;
@@ -65,7 +66,7 @@ header{
   text-align:center;
   background:#330C9F;
   color:#B4A3E4;
-  max-height:7em;
+  /*max-height:7em;*/
 }
 .breaker{
   height: 1em;
@@ -125,7 +126,7 @@ header{
 }
 */
 
-#fountainG{
+/*#fountainG{
   position: fixed;
     left: 30%;
     top: 40%;
@@ -438,4 +439,4 @@ header{
       background-color:#5BF2F7;
     }
 
-  }
+  }*/
