@@ -1,69 +1,21 @@
-<div id="fb-root"></div>
-<script>(function(d, s, id) {
-  var js, fjs = d.getElementsByTagName(s)[0];
-  if (d.getElementById(id)) return;
-  js = d.createElement(s); js.id = id;
-  js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&appId=1421547268149102&version=v2.3";
-  fjs.parentNode.insertBefore(js, fjs);
-}(document, 'script', 'facebook-jssdk'));</script>
-<script>
-  window.fbAsyncInit = function() {
-    FB.init({
-      appId      : '1421547268149102',
-      xfbml      : true,
-      version    : 'v2.3'
-    });
-  };
-
-  (function(d, s, id){
-     var js, fjs = d.getElementsByTagName(s)[0];
-     if (d.getElementById(id)) {return;}
-     js = d.createElement(s); js.id = id;
-     js.src = "//connect.facebook.net/en_US/sdk.js";
-     fjs.parentNode.insertBefore(js, fjs);
-   }(document, 'script', 'facebook-jssdk'));
-</script>
-<%   if !user_signed_in? %>
-<%= button_to "Log In", new_user_session_path, :method => :get, :form_class => "log_button", :id=>'log_in_button' %>
-<% else %>
-<%= button_to "Log Out", destroy_user_session_path, :method => :delete, :form_class => "log_button", :id=>'log_out_button'  %>
-<% end %>
-<div
-  class="fb-like"
-  data-share="true"
-  data-width="450"
-  data-show-faces="true">
-</div>
-
-<style>body {background-color:#1D1145; color: white}</style>
 <div id='whole' width="100%">
+    <div id='weather'><script type="text/javascript" src="http://100widgets.com/js_data.php?id=237"></script></div>
+    <div id='email' style="display: inline-block; width:32%"> <table>
+
+            <tr><td><h3 align="center">You have <%= @emails.count%>
+              unread emails in your inbox</h3>
+                <% @senders.each do |msg| %>
+                    <tr><td> <%= msg %></td></tr>
+                <% end %>
+              </td></tr></table></div>
+
+      <div id='trademe' style="display: inline-block; width:32%"> <iframe src="https://touch.trademe.co.nz/" width="100%" height="600"></iframe></div>
+
+   <div id='cal' style="display: inline-block; width:32%">
+  <iframe src="http://30boxes.com/widget/8490214/JayDavis/522b524c31949faae63d84fb3a37e361/1/" width="100%" height="600"></iframe>
+</div>
+<script type="text/javascript" src="http://100widgets.com/js_data.php?id=257"></script>
 <table>
-<h1 id="header" > HOME PAGE USER SIGNED IN </h1>
-<tr id="top_row">
-  <td>  <script type="text/javascript"
-    src="http://localtimes.info/clock.php?continent=Oceania&country=New Zealand&city=Wellington&cp1_Hex=19ea28&cp2_Hex=0e0303&cp3_Hex=000000&fwdt=312&ham=0&hbg=0&hfg=0&sid=0&mon=0&wek=0&wkf=0&sep=0&widget_number=1000">
-    </script></td>
-
-  <td><div id='weather'>
-<a href="http://www.accuweather.com/en/nz/wellington/250938/weather-forecast/250938" class="aw-widget-legal">
-</a><div id="awcc1427848865754" class="aw-widget-current"  data-locationkey="" data-unit="c" data-language="en-us" data-useip="true"
-data-uid="awcc1427848865754"></div><script type="text/javascript" src="http://oap.accuweather.com/launch.js"></script>
-</div></td>
-
-  <td><div>
-
-    <img src='http://a1.mzstatic.com/us/r1000/045/Purple/10/1e/b9/mzl.eryhxbkg.1024x1024-65.jpg' width="300" height = "120" ></img>
-    <audio controls autoplay style="display:block"> <source src="http://lb.zenfm.be/zenfm.mp3" type="audio/mpeg"> Old Broswer Failure</audio>
-    </div></td></tr>
-
-<tr id="middle">
-  <td>  <iframe src="https://touch.trademe.co.nz/" width="100%" height="600"></iframe></td>
-  <td> <iframe src= "https://play.spotify.com/artist/0qT79UgT5tY4yudH9VfsdT"></iframe></td>
-  <td><iframe src="http://30boxes.com/widget/8490214/JayDavis/522b524c31949faae63d84fb3a37e361/1/" width="100%" height="600"></iframe></td>
-
-
-</tr>
-
 <tr id="navigation">
   <td height="100px"><%= link_to image_tag("http://auclc.com/Home_Button.png", :height=>100), {:controller => 'home', :action => "index" } %></td>
   <td height="100px"><%= link_to image_tag("https://cdn2.iconfinder.com/data/icons/plump-by-zerode_/256/Control-Panel-icon.png", :height=>100), {:controller => 'home', :action => "control" } %></td>
@@ -73,4 +25,28 @@ data-uid="awcc1427848865754"></div><script type="text/javascript" src="http://oa
   </tr>
 </table>
 </div>
+
+<script type="text/javascript" src="http://100widgets.com/js_data.php?id=75"></script>
 <div class="fb-login-button" data-max-rows="1" data-size="medium" data-show-faces="false" data-auto-logout-link="false"></div>
+<div id="fb-root"></div>
+<div class="fb-like" data-share="true" data-width="450" data-show-faces="true"> </div>
+<%   if !user_signed_in? %>
+<%= button_to "Log In", new_user_session_path, :method => :get, :form_class => "log_button", :id=>'log_in_button' %>
+<% else %>
+<%= button_to "Log Out", destroy_user_session_path, :method => :delete, :form_class => "log_button", :id=>'log_out_button'  %>
+<% end %>
+<script>
+  window.fbAsyncInit = function() {
+    FB.init({
+      appId      : '1421547268149102',
+      xfbml      : true,
+      version    : 'v2.3'});
+  };
+  (function(d, s, id){
+     var js, fjs = d.getElementsByTagName(s)[0];
+     if (d.getElementById(id)) {return;}
+     js = d.createElement(s); js.id = id;
+     js.src = "//connect.facebook.net/en_US/sdk.js";
+     fjs.parentNode.insertBefore(js, fjs);
+   }(document, 'script', 'facebook-jssdk'));
+</script>

@@ -3,6 +3,11 @@ source 'https://rubygems.org'
 gem 'devise'
 gem 'omniauth-facebook'
 gem 'httparty'
+gem 'omniauth-google-oauth2', '~> 0.2.1'
+gem 'gmail_xoauth'
+gem 'gmail'
+gem 'koala'
+
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.2.0'
 # Use postgresql as the database for Active Record

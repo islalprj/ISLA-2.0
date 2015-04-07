@@ -1,21 +1,28 @@
-Rails.application.routes.draw do
-  devise_for :users, controllers: { :omniauth_callbacks => "users/omniauth_callbacks" }
 
-  authenticated :user do
-   root to: "home#index", as: :authenticated_root
-  end
 
-  get '/control', to: 'home#control'
-  get '/monitor', to: 'home#monitor'
-  get '/cams', to: 'home#cams'
-  get '/traffic', to: 'home#traffic'
+  Rails.application.routes.draw do
+    devise_for :users, controllers: { :omniauth_callbacks => "users/omniauth_callbacks" }
 
+    authenticated :user do
+     root to: "home#index", as: :authenticated_root
+    end
+
+    get '/control', to: 'home#control'
+    get '/monitor', to: 'home#monitor'
+    get '/cams', to: 'home#cams'
+    get '/traffic', to: 'home#traffic'
+    get '/mail', to: 'sessions#create_gmail'
+
+<<<<<<< HEAD
   resources :users, only: [:index, :new]
   patch '/items/:id/toggle', to: 'items#toggle'
+=======
+    patch '/items/:id/toggle', to: 'items#toggle'
+>>>>>>> 3a5431d1c39d41e0c13538c1a0755b6619fbe30a
 
-  unauthenticated do
-    devise_scope :user do
-      root to: "devise/registrations#new", as: :unauthenticated_root
+    unauthenticated do
+      devise_scope :user do
+        root to: "devise/registrations#new", as: :unauthenticated_root
+      end
     end
   end
-end
