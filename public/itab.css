@@ -6,13 +6,13 @@ body{
 
 .sidemenu{
   
-    top: 5em;
-  left: 5em;
+  top: 50px;
+  left: 50px;
   position: relative;
   background-color: pink;
   border: solid black 1px;
-  width: 25em;
-  height: 25em;
+  width: 1204px;
+  height: 503px;
 }
 
 
@@ -72,7 +72,7 @@ border: 1px solid black;
   border-right:50px solid #649Fe4;
   border-top: 50px solid transparent;
   border-bottom: 50px solid transparent; 
-  margin-left: 1279px;
+  margin-left: 1276px;
   margin-top: 3px;
 }
 
