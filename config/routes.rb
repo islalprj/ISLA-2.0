@@ -10,6 +10,7 @@ Rails.application.routes.draw do
   get '/cams', to: 'home#cams'
   get '/traffic', to: 'home#traffic'
 
+  resources :users, only: [:index, :new]
   patch '/items/:id/toggle', to: 'items#toggle'
 
   unauthenticated do

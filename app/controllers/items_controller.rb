@@ -1,5 +1,4 @@
 class ItemsController < ApplicationController
-
   def toggle
     item=Item.find(params[:id])
     if item.on==true
@@ -9,8 +8,6 @@ class ItemsController < ApplicationController
       item.on=true
       item.save
     end
-    
     render json: item.save
   end
-
 end
