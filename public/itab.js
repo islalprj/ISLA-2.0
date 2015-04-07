@@ -26,3 +26,16 @@ ready(function () {
 	},10005);
 
 })
+
+$(function () {
+    $('.front-page').hover(function () {
+        var pos = $(this).position();
+        var $clone = $(this).clone();
+        $clone.appendTo(this).addClass('front-page_clone').css({
+            left: pos.left,
+            top: pos.top
+        });
+    }, function () {
+        $('.front-page_clone', this).remove();
+    });
+});
