@@ -3,7 +3,23 @@ html {
   height: 100%;
   width: 100%;
 }
+.css-class-add, .css-class-remove {
+  -webkit-transition:all cubic-bezier(1,2,3,4) 0.5s;
+  -moz-transition:all cubic-bezier(1,2,3,4) 0.5s;
+  -o-transition:all cubic-bezier(1,2,3,4) 0.5s;
+  transition:all cubic-bezier(1,2,3,4) 0.5s;
+}
 
+.css-class,
+.css-class-add.css-class-add-active {
+  color: red;
+  font-size:3em;
+}
+
+.css-class-remove.css-class-remove-active {
+  font-size:1.0em;
+  color:black;
+}
 body {
   height: 100%;
   width: 100%;
