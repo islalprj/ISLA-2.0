@@ -1,6 +1,6 @@
 
 body{
-   background-color: #649FB0;
+   background-color: #0B0B12;
 }
 
 
@@ -9,7 +9,7 @@ body{
   top: 54px;
   left: 50px;
   position: fixed;
-  background-color: pink;
+  background-color: #6D6D74;
   border: solid black 1px;
   width: 1200px;
   height: 500px;
@@ -21,7 +21,7 @@ body{
   left: 50px;
   display: block;
   position: fixed;
-  background-color: blue;
+  background-color: #262629;
   border: solid black 1px;
   width: 1200px;
   height: 500px;
@@ -33,7 +33,7 @@ body{
   left: 50px;
   display: block;
   position: fixed;
-  background-color: red;
+  background-color: #262629;
   border: solid black 1px;
   width: 1200px;
   height: 500px;
@@ -45,7 +45,7 @@ body{
   left: 50px;
   display: block;
   position: fixed;
-  background-color: white;
+  background-color: #262629;
   border: solid black 1px;
   width: 1200px;
   height: 500px;
@@ -57,7 +57,7 @@ body{
   left: 65px;
   display: none;
   position: fixed;
-  background-color: white;
+  background-color: #262629;
   border: solid black 1px;
   width: 1200px;
   height: 500px;
@@ -166,7 +166,7 @@ body{
 
 #jumbo{
 -webkit-transform: translateZ(0);
- background-color:#649FB0;
+ background-color:#0B0B12;
 width: 1330px;
 height: 626px;
 border: 1px solid black;
@@ -178,7 +178,7 @@ border: 1px solid black;
   margin-left:auto;
   margin-right: auto;
   margin-top:574px;
-  border-bottom: 50px solid #649FE4;
+  border-bottom: 50px solid #4b4b50;
   border-left: 50px solid transparent;
   border-right: 50px solid transparent;
   height: 0;
@@ -191,7 +191,7 @@ border: 1px solid black;
   margin-left:auto;
   margin-right: auto;
   margin-top:2px;
-  border-top: 50px solid #649FE4;
+  border-top: 50px solid #4b4b50;
   border-left: 50px solid transparent;
   border-right: 50px solid transparent;
   height: 0;
@@ -203,7 +203,7 @@ border: 1px solid black;
   display: none;
   height: 520px;
   width: 0;
-  border-right:50px solid #649Fe4;
+  border-right:50px solid #0c0c0f;
   border-top: 50px solid transparent;
   border-bottom: 50px solid transparent; 
   margin-left: 1276px;
@@ -215,7 +215,7 @@ border: 1px solid black;
   display: none;
   height: 520px;
   width: 0;
-  border-left:50px solid #649Fe4;
+  border-left:50px solid #6D6D74;
   border-top: 50px solid transparent;
   border-bottom: 50px solid transparent; 
   margin-left: 1px;
