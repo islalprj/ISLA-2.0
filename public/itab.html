@@ -4,12 +4,13 @@
 	<html lang="en-US">
 	<link rel="stylesheet" type="text/css" href="itab.css"></link>
 	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.14/angular.min.js"></script>
+	 <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.14/angular-animate.js"></script>
 	<script src="itab.js"></script>
 
 
 
 </head>
-<body>
+<body ng-app="ngAnimate">
 <div class="front-page" id="jumbo">
 
 	<div class="front-page" id="google"></div>
@@ -28,8 +29,21 @@
 								
 	<div class="frame" id="controller"></div>
 								
-	<div class="frame" id="cams"></div>
+	<div class="frame" id="cams" ng-click="camsidemenuvisable = !camsidemenuvisable"></div>
 
+
+
+<div ng-init="camsidemenuvisable=true">
+<div class="sidemenu show-hide" ng-show="camsidemenuvisable">hi
+<input type="checkbox" ng-model="camsidemenuvisable" style="float:left; margin-right:10px;">
+
+</div>
+
+
+
+	<div ng-model="mouseeneter" ng-init="mouseeneter=true" class="animate-if">
+	<div ng-if="mouseeneter" class="animate-if"></div>
+	</div>
 
  <div id="fountainG">
         <div id="fountainG_1" class="fountainG">
