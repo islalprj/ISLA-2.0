@@ -23,28 +23,29 @@
 					
 	<div class="front-page" id="musicplayer"></div>
 						
-	<div class="frame" id="weather"></div>
+	<div class="frame" id="weather" ng-mouseover="weatheridemenuvisable = !weatheridemenuvisable"
+        ng-mouseout="weatheridemenuvisable = false"></div>
+    <div ng-init="weatheridemenuvisable=false">
+    <div class="weathersidemenu show-hide" ng-show="weatheridemenuvisable">hi Jay, what are you wearing?
+    </div>    
 							
-	<div class="frame" id="traffic"></div>
+	<div class="frame" id="traffic" ng-mouseover="trafficidemenuvisable = !trafficidemenuvisable"
+        ng-mouseout="trafficidemenuvisable = false"></div>
+    <div ng-init="trafficidemenuvisable=false">
+    <div class="trafficsidemenu show-hide" ng-show="trafficidemenuvisable">hi Jay, what are you doing?
+    </div>
 								
-	<div class="frame" id="controller"></div>
-								
+	<div class="frame" id="controller" ng-mouseover="controlleridemenuvisable = !controlleridemenuvisable"
+        ng-mouseout="controlleridemenuvisable = false"></div>
+    <div ng-init="controlleridemenuvisable=false">
+    <div class="controllersidemenu show-hide" ng-show="controlleridemenuvisable">hi Jay, what's cracking?
+    </div>
+							
 	<div class="frame" id="cams" ng-mouseover="camsidemenuvisable = !camsidemenuvisable"
         ng-mouseout="camsidemenuvisable = false"></div>
-
-
-
-<div ng-init="camsidemenuvisable=false">
-<div class="sidemenu show-hide" ng-show="camsidemenuvisable">hi
-<input type="checkbox" ng-model="camsidemenuvisable" style="float:left; margin-right:10px;">
-
-</div>
-
-
-
-	<div ng-model="mouseeneter" ng-init="mouseeneter=true" class="animate-if">
-	<div ng-if="mouseeneter" class="animate-if"></div>
-	</div>
+    <div ng-init="camsidemenuvisable=false">
+    <div class="sidemenu show-hide" ng-show="camsidemenuvisable">hi Jay, what's cracking?
+    </div>
 
  <div id="fountainG">
         <div id="fountainG_1" class="fountainG">

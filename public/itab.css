@@ -15,6 +15,36 @@ body{
   height: 503px;
 }
 
+.controllersidemenu{
+  top: 50px;
+  left: 50px;
+  position: relative;
+  background-color: blue;
+  border: solid black 1px;
+  width: 1204px;
+  height: 503px;
+}
+
+.trafficsidemenu{
+  top: 50px;
+  left: 50px;
+  position: relative;
+  background-color: red;
+  border: solid black 1px;
+  width: 1204px;
+  height: 503px;
+}
+
+.weathersidemenu{
+  top: 50px;
+  left: 50px;
+  position: relative;
+  background-color: white;
+  border: solid black 1px;
+  width: 1204px;
+  height: 503px;
+}
+
 
 .show-hide {
   padding:10px;
