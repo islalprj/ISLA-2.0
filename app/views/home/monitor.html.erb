@@ -3,6 +3,19 @@
 <% else %>
 <%= button_to "Log Out", destroy_user_session_path, :method => :delete, :form_class => "log_button", :id=>'log_out_button'  %>
 <% end %>
+
+<h2 align="center">You have <%= @emails.count%> unread emails in your inbox</h2>
+
+<table><tr><td>
+  <table>
+    <% @senders.each do |msg| %>
+    <tr><td> <%= msg %></td></tr>
+    <% end %>
+</table></td>
+</tr>
+</table>
+
+
 <table>
   <tr id="info1">
     <td>lunch is gonna be cheese</td>
@@ -12,20 +25,22 @@
   </tr>
   <tr id="info2">
     <td>out side temp</td>
-    <td><img src="http://blog.bindows.net/wp-content/uploads/2007/12/gauge_w_label_400t.png", height='220px'></img></td>
+    <td><img src="http://blog.bindows.net/wp-content/uploads/2007/12/gauge_w_label_400t.png", height='190px'></img></td>
     <td>HWC temp</td>
-    <td><img src="http://blog.bindows.net/wp-content/uploads/2007/12/gauge_w_label_400t.png", height='220px'></img></td>
+    <td><img src="http://blog.bindows.net/wp-content/uploads/2007/12/gauge_w_label_400t.png", height='190px'></img></td>
   </tr>
   <tr id="info3">
-    <td>9dfgdfgdsgdgsdgs</td>
-    <td>8dfgdfgdfgdfg</td>
-    <td>dfgdfgsffffgff,gmjdfgjkhdfgjkh</td>
-    <td>dfgdfglhdglkdgdlfghgjhidflkghj</td>
+
+
+    <td...</td>
+    <td>...</td>
+    <td>...</td>
+    <td>...</td>
   </tr>
   <tr id="info4">
-    <td>dfgdfgdfgdghdfhdfhdfz</td>
-    <td>dfgdfgdfgdfgdfgdfgdfg</td>
-    <td>dfgdfgldkhgdgjhdfglhjk</td>
+    <td>...</td>
+    <td>...</td>
+    <td>...</td>
     <td>just kidding</td>
   </tr>
   <tr id="navigation", width='90%'>
