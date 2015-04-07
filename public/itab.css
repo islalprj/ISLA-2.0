@@ -53,31 +53,35 @@ header{
 .breaker{
   height: 1em;
 }
-/*#controller{
-  position: fixed;
+#controller{
+
+  display:none;
   margin-left:auto;
   margin-right: auto;
   margin-top:-49px;
   border-bottom: 50px solid #649FE4;
   border-left: 50px solid transparent;
   border-right: 50px solid transparent;
-  width: 100%;
-}*/
+  height: 0;
+  width: 1227px;
+}
 
 #weather{
+  display:none;
   margin-left:auto;
   margin-right: auto;
   margin-top:2px;
   border-top: 50px solid #649FE4;
   border-left: 50px solid transparent;
   border-right: 50px solid transparent;
-  width: 100%;
-  width:5%;
-  position: fixed;
+  height: 0;
+  width: 1227px;
+
 
 }
 
 #traffic{
+  display: none;
   height: 520px;
   width: 0;
   border-right:50px solid #649Fe4;
@@ -85,19 +89,22 @@ header{
   border-bottom: 50px solid transparent;
   margin-left: 1279px;
   margin-top: -50px;
-  position: fixed;
+
 
 }
 
 #cams{
+  display: none;
   height: 100%;
-  position: fixed;
-  margin-left:auto;
-  margin-right: auto;
-  /*margin-top:-49px;*/
-  border-bottom: 50px solid #649FE4;
-  border-left: 50px solid transparent;
-  border-right: 50px solid transparent;
+  width: 5%;
+  background-color:#649Fe4
+  border-left:50px solid #649Fe4;
+  border-top: 50px solid transparent;
+  border-bottom: 50px solid transparent;
+  margin-left: 1px;
+  margin-top: -621px;
+
+
 }
 
 
