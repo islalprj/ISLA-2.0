@@ -3,6 +3,64 @@ body{
    background-color: #649FB0;
 }
 
+
+.sidemenu{
+  
+  top: 50px;
+  left: 50px;
+  position: relative;
+  background-color: pink;
+  border: solid black 1px;
+  width: 1204px;
+  height: 503px;
+}
+
+.controllersidemenu{
+  top: 50px;
+  left: 50px;
+  position: relative;
+  background-color: blue;
+  border: solid black 1px;
+  width: 1204px;
+  height: 503px;
+}
+
+.trafficsidemenu{
+  top: 50px;
+  left: 50px;
+  position: relative;
+  background-color: red;
+  border: solid black 1px;
+  width: 1204px;
+  height: 503px;
+}
+
+.weathersidemenu{
+  top: 50px;
+  left: 50px;
+  position: relative;
+  background-color: white;
+  border: solid black 1px;
+  width: 1204px;
+  height: 503px;
+}
+
+
+.show-hide {
+  padding:10px;
+  border:1px solid black;
+  
+}
+
+.show-hide {
+  -webkit-transition:all linear 0.5s;
+  transition:all linear 0.5s;
+}
+
+.show-hide.ng-hide {
+  opacity:0;
+}
+
 #jumbo{
 background-color:#649FB0;
 width: 1330px;
@@ -44,7 +102,7 @@ border: 1px solid black;
   border-right:50px solid #649Fe4;
   border-top: 50px solid transparent;
   border-bottom: 50px solid transparent; 
-  margin-left: 1279px;
+  margin-left: 1276px;
   margin-top: 3px;
 }
 
