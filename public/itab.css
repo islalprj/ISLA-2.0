@@ -65,11 +65,13 @@ body{
     left: -100%;
 }
 .show-hideL {
-    left: 65px;
-}
+     left: 65px;
+    top: 65px;
+    }
  
 .ng-hide {
-    left: 65px;
+     left: 65px;
+    top: 65px;
 }
 .show-hideL.ng-hide{
     left: 100%;
@@ -89,10 +91,12 @@ body{
 }
 .show-hideR {
     left: 65px;
+    top: 65px;;
 }
  
 .ng-hide {
     left: 65px;
+    top: 65px;
 }
 .show-hideR.ng-hide{
     left: -100%;
@@ -111,11 +115,13 @@ body{
     top: -100%;
 }
 .show-hideT{
-    top: 60px;
+  left: 65px;
+    top: 65px;
 }
  
 .ng-hide {
-    top: 60px;
+    left: 65px;
+    top: 65px;
 }
 .show-hideT.ng-hide{
     top: 100%;
@@ -134,11 +140,13 @@ body{
     top: 100%;
 }
 .show-hideB{
-    top: 60px;
+     left: 65px;
+    top: 65px;
 }
  
 .show-hideB{
-    top: 60px;
+    left: 65px;
+    top: 65px;
 }
 .show-hideB.ng-hide{
     top: -100%;
