@@ -41,6 +41,7 @@ header{
   text-align:center;
   background:#330C9F;
   color:#B4A3E4;
+  max-height:40em;
 }
 .bottom{
   margin-left:2%;
@@ -48,12 +49,12 @@ header{
   text-align:center;
   background:#330C9F;
   color:#B4A3E4;
-
+  max-height:7em;
 }
 .breaker{
   height: 1em;
 }
-#controller{
+/*#controller{
 
   display:none;
   margin-left:auto;
@@ -106,7 +107,7 @@ header{
 
 
 }
-
+*/
 
 #fountainG{
   position: fixed;
