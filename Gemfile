@@ -8,6 +8,12 @@ gem 'gmail_xoauth'
 gem 'gmail'
 gem 'koala'
 
+source 'https://rails-assets.org' do
+  gem 'rails-assets-angular'
+  gem 'rails-assets-angular-animate'
+end
+
+
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.2.0'
 # Use postgresql as the database for Active Record

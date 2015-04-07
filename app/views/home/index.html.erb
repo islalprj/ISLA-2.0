@@ -1,52 +1,85 @@
-<div id='whole' width="100%">
-    <div id='weather'><script type="text/javascript" src="http://100widgets.com/js_data.php?id=237"></script></div>
-    <div id='email' style="display: inline-block; width:32%"> <table>
 
-            <tr><td><h3 align="center">You have <%= @emails.count%>
-              unread emails in your inbox</h3>
-                <% @senders.each do |msg| %>
-                    <tr><td> <%= msg %></td></tr>
-                <% end %>
-              </td></tr></table></div>
+<div class="front-page" id="jumbo" ng-app="ngAnimate">
 
-      <div id='trademe' style="display: inline-block; width:32%"> <iframe src="https://touch.trademe.co.nz/" width="100%" height="600"></iframe></div>
+	<div class="front-page" id="google"></div>
 
-   <div id='cal' style="display: inline-block; width:32%">
-  <iframe src="http://30boxes.com/widget/8490214/JayDavis/522b524c31949faae63d84fb3a37e361/1/" width="100%" height="600"></iframe>
+	<div class="front-page" id="gmail"></div>
+
+	<div class="front-page" id="trademe"></div>
+
+	<div class="front-page" id="messenger"></div>
+
+	<div class="front-page" id="musicplayer"></div>
+
+	<div class="frame" id="weather" ng-mouseover="weatheridemenuvisable = !weatheridemenuvisable"
+        ng-mouseout="weatheridemenuvisable = false"></div>
+    <div ng-init="weatheridemenuvisable=false">
+    <div class="weathersidemenu show-hide" ng-show="weatheridemenuvisable">hi Jay, what are you wearing?
+    </div>
+
+	<div class="frame" id="traffic" ng-mouseover="trafficidemenuvisable = !trafficidemenuvisable"
+        ng-mouseout="trafficidemenuvisable = false"></div>
+    <div ng-init="trafficidemenuvisable=false">
+    <div class="trafficsidemenu show-hide" ng-show="trafficidemenuvisable">hi Jay, what are you doing?
+    </div>
+
+	<div class="frame" id="controller" ng-mouseover="controlleridemenuvisable = !controlleridemenuvisable"
+        ng-mouseout="controlleridemenuvisable = false"></div>
+    <div ng-init="controlleridemenuvisable=false">
+    <div class="controllersidemenu show-hide" ng-show="controlleridemenuvisable">hi Jay, what's cracking?
+    </div>
+
+	<div class="frame" id="cams" ng-mouseover="camsidemenuvisable = !camsidemenuvisable"
+        ng-mouseout="camsidemenuvisable = false"></div>
+    <div ng-init="camsidemenuvisable=false">
+    <div class="sidemenu show-hide" ng-show="camsidemenuvisable">hi Jay, what's cracking?
+    </div>
+
+ <div id="fountainG">
+        <div id="fountainG_1" class="fountainG">
+        </div>
+        <div id="fountainG_1A" class="fountainG">
+        </div>
+        <div id="fountainG_1B" class="fountainG">
+        </div>
+        <div id="fountainG_2" class="fountainG">
+        </div>
+        <div id="fountainG_2A" class="fountainG">
+        </div>
+        <div id="fountainG_2B" class="fountainG">
+        </div>
+        <div id="fountainG_3" class="fountainG">
+        </div>
+        <div id="fountainG_3A" class="fountainG">
+        </div>
+        <div id="fountainG_3B" class="fountainG">
+        </div>
+        <div id="fountainG_4" class="fountainG">
+        </div>
+        <div id="fountainG_4A" class="fountainG">
+        </div>
+        <div id="fountainG_4B" class="fountainG">
+        </div>
+        <div id="fountainG_5" class="fountainG">
+        </div>
+        <div id="fountainG_5A" class="fountainG">
+        </div>
+        <div id="fountainG_5B" class="fountainG">
+        </div>
+        <div id="fountainG_6" class="fountainG">
+        </div>
+        <div id="fountainG_6A" class="fountainG">
+        </div>
+        <div id="fountainG_6B" class="fountainG">
+        </div>
+        <div id="fountainG_7" class="fountainG">
+        </div>
+        <div id="fountainG_7A" class="fountainG">
+        </div>
+        <div id="fountainG_7B" class="fountainG">
+        </div>
+        <div id="fountainG_8" class="fountainG">ISLA
+        </div>
+    </div>
 </div>
-<script type="text/javascript" src="http://100widgets.com/js_data.php?id=257"></script>
-<table>
-<tr id="navigation">
-  <td height="100px"><%= link_to image_tag("http://auclc.com/Home_Button.png", :height=>100), {:controller => 'home', :action => "index" } %></td>
-  <td height="100px"><%= link_to image_tag("https://cdn2.iconfinder.com/data/icons/plump-by-zerode_/256/Control-Panel-icon.png", :height=>100), {:controller => 'home', :action => "control" } %></td>
-  <td height="100px"><%= link_to image_tag("http://images.clipartpanda.com/gauge-clipart-gauge-for-temperature-3-hi.png", :height=>100, :width=>100), {:controller => 'home', :action => "monitor" } %></td>
-  <td height="100px"><%= link_to image_tag("http://png-2.findicons.com/files/icons/2320/x_mac_general/400/traffic_lights.png",:height=>100), {:controller => 'home', :action => "traffic" } %></td>
-  <td height="100px"><%= link_to image_tag("https://lh4.ggpht.com/ezNJTCkXJ1EDq7Qspr56GIhT5qg_yzNIzHfKmRHZOC-ZCaLK7VFbRLRuEoPCi10-3Q=w300", :height=>100), {:controller => 'home', :action => "cams" } %></td>
-  </tr>
-</table>
-</div>
-
-<script type="text/javascript" src="http://100widgets.com/js_data.php?id=75"></script>
-<div class="fb-login-button" data-max-rows="1" data-size="medium" data-show-faces="false" data-auto-logout-link="false"></div>
-<div id="fb-root"></div>
-<div class="fb-like" data-share="true" data-width="450" data-show-faces="true"> </div>
-<%   if !user_signed_in? %>
-<%= button_to "Log In", new_user_session_path, :method => :get, :form_class => "log_button", :id=>'log_in_button' %>
-<% else %>
-<%= button_to "Log Out", destroy_user_session_path, :method => :delete, :form_class => "log_button", :id=>'log_out_button'  %>
-<% end %>
-<script>
-  window.fbAsyncInit = function() {
-    FB.init({
-      appId      : '1421547268149102',
-      xfbml      : true,
-      version    : 'v2.3'});
-  };
-  (function(d, s, id){
-     var js, fjs = d.getElementsByTagName(s)[0];
-     if (d.getElementById(id)) {return;}
-     js = d.createElement(s); js.id = id;
-     js.src = "//connect.facebook.net/en_US/sdk.js";
-     fjs.parentNode.insertBefore(js, fjs);
-   }(document, 'script', 'facebook-jssdk'));
-</script>
+        </div>
