@@ -61,6 +61,4 @@
     </tr>
 </table>
 
-<% feed = @graph.get_connections("me", "feed") %>
-<% feed.each do |f| %>
-<%=f%>
+<%= @graph %>

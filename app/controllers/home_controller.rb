@@ -30,7 +30,7 @@ def monitor
 
     @oauth = Koala::Facebook::OAuth.new('1421547268149102', '73fad9609562720c0709076fd27dcebd', 'https://islalprj.herokuapp.com/monitor')
     @graph = Koala::Facebook::API.new(@oauth)
-    @profile = @graph.get_object("me")
+    @profile = @graph.get_object(@oauth)
 
   end
 
