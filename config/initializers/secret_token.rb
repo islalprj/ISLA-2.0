@@ -1,0 +1,1 @@
+FetchGmail::Application.config.secret_token = '217a53dd60d6088d229f14a68503db4c034b370a92f6082ca0ab7fa48aebd60633792afeff732c72dd325addd1fae8583e3af07d8a60bd0f9a3ea05d75b2c8d4'

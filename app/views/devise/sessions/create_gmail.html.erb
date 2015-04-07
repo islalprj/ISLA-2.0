@@ -1,0 +1,8 @@
+<div>OAuth2 token: <%= @oauth2_token %></div>
+<div>Email: <%= @user_email %></div>
+<div>Retrieved: <%= @messages_count %> messages since 1st April 2014</div>
+<ul>
+<% @msgs.each do |msg| %>
+  <div border='2px'>  <li><%= msg %></li></div>
+<% end %>
+</ul>

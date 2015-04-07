@@ -3,6 +3,28 @@
 <% else %>
 <%= button_to "Log Out", destroy_user_session_path, :method => :delete, :form_class => "log_button", :id=>'log_out_button'  %>
 <% end %>
+
+<h2 align="center">You have <%= @emails.count%> unread emails in your inbox</h2>
+
+<table><tr><td>
+  <table>
+    <% @subjects.each do |mmm| %>
+
+    <tr><td>Subject:</td><td> <%= mmm %></td></tr>
+    <% end %>
+</table></td>
+<td>
+
+<table>
+<% @senders.each do |mmm| %>
+
+<tr><td>Sender:</td><td> <%= mmm %></td></tr>
+<% end %>
+</table>
+</td></tr>
+</table>
+
+
 <table>
   <tr id="info1">
     <td>lunch is gonna be cheese</td>
@@ -12,20 +34,22 @@
   </tr>
   <tr id="info2">
     <td>out side temp</td>
-    <td><img src="http://blog.bindows.net/wp-content/uploads/2007/12/gauge_w_label_400t.png", height='220px'></img></td>
+    <td><img src="http://blog.bindows.net/wp-content/uploads/2007/12/gauge_w_label_400t.png", height='190px'></img></td>
     <td>HWC temp</td>
-    <td><img src="http://blog.bindows.net/wp-content/uploads/2007/12/gauge_w_label_400t.png", height='220px'></img></td>
+    <td><img src="http://blog.bindows.net/wp-content/uploads/2007/12/gauge_w_label_400t.png", height='190px'></img></td>
   </tr>
   <tr id="info3">
+
+
     <td>9dfgdfgdsgdgsdgs</td>
     <td>8dfgdfgdfgdfg</td>
-    <td>dfgdfgsffffgff,gmjdfgjkhdfgjkh</td>
-    <td>dfgdfglhdglkdgdlfghgjhidflkghj</td>
+    <td>dfgdfgsffffgff,gfgjkh</td>
+    <td>dflkdgdlfghgjhidflkghj</td>
   </tr>
   <tr id="info4">
-    <td>dfgdfgdfgdghdfhdfhdfz</td>
-    <td>dfgdfgdfgdfgdfgdfgdfg</td>
-    <td>dfgdfgldkhgdgjhdfglhjk</td>
+    <td>dfgdfgdfgdghdfhddfz</td>
+    <td>dfgdfgdffgdfgdfgdfg</td>
+    <td>dfgdfgkhgdgjhdfglhjk</td>
     <td>just kidding</td>
   </tr>
   <tr id="navigation", width='90%'>
@@ -36,3 +60,7 @@
     <td height="100px"><%= link_to image_tag("https://lh4.ggpht.com/ezNJTCkXJ1EDq7Qspr56GIhT5qg_yzNIzHfKmRHZOC-ZCaLK7VFbRLRuEoPCi10-3Q=w300", :height=>100), {:controller => 'home', :action => "cams" } %></td>
     </tr>
 </table>
+
+<% feed = @graph.get_connections("me", "feed") %>
+<% feed.each do |f| %>
+<%=f%>
