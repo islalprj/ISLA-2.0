@@ -8,15 +8,15 @@ default: &default
 
 development:
   <<: *default
-  database: house_development
+  database: islap_development
 
 test:
   <<: *default
-  database: house_test
+  database: islap_test
 
 #
 production:
   <<: *default
-  database: house_production
-  username: house
+  database: islap_production
+  username: isla
   password: <%= ENV['HOUSE_DATABASE_PASSWORD'] %>
