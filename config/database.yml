@@ -8,11 +8,11 @@ default: &default
 
 development:
   <<: *default
-  database: islap_development
+  database: hello_world_development
 
 test:
   <<: *default
-  database: islap_test
+  database: hello_world_test
 
 #
 production:

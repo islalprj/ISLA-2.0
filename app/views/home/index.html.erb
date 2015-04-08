@@ -16,6 +16,7 @@
       <div ng-init="weatheridemenuvisable=false">
       <div class="weathersidemenu show-hideT" ng-show="weatheridemenuvisable">
       <script type="text/javascript" src="http://100widgets.com/js_data.php?id=237"></script>
+      <h1>Isla weather report</h1>
       </div>
 
   	<div class="frame" id="traffic" ng-mouseenter="trafficidemenuvisable = !trafficidemenuvisable"
@@ -32,22 +33,21 @@
                                                    <td width="30%"> <img border="1" src="http://www.trafficnz.info/camera/230.jpg"></td>
                                                    </tr>
                                                    </table>
+                                                   <h1>Isla traffic report</h1>
       </div>
 
   	<div class="frame" id="controller" ng-mouseenter="controlleridemenuvisable = !controlleridemenuvisable"
           ng-mouseleave="controlleridemenuvisable = false"></div>
       <div ng-init="controlleridemenuvisable=false">
       <div class="controllersidemenu show-hideB" ng-show="controlleridemenuvisable">
-        <table width='90%' height='90%' >
+        <table width='90%'>
           <tr>
             <th>Item</th>
             <th>Status</th>
           </tr>
         <% @items.each do |item| %>
         <tr>
-          <td>
-      <%= item.name %>
-          </td>
+          <td><%= item.name %></td>
           <% if item.on==true%>
         <td> <img  width = '10%' src='on.png' class='button' id=<%=item.id%>> </td>
             <% else %>
@@ -55,7 +55,7 @@
             <%end%>
         </tr>
       <% end %>
-    </table>
+      </table>
       </div>
 
   	<div class="frame" id="cams" ng-mouseenter="camsidemenuvisable = !camsidemenuvisable"
