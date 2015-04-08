@@ -9,7 +9,7 @@ body{
   top: 54px;
   left: 50px;
   position: fixed;
-  background-color: #6D6D74;
+  background-color: white;
   border: solid black 1px;
   width: 1200px;
   height: 500px;
@@ -21,7 +21,7 @@ body{
   left: 50px;
   display: block;
   position: fixed;
-  background-color: #262629;
+  background-color: white;
   border: solid black 1px;
   width: 1200px;
   height: 500px;
@@ -33,7 +33,7 @@ body{
   left: 50px;
   display: block;
   position: fixed;
-  background-color: #262629;
+  background-color: white;
   border: solid black 1px;
   width: 1200px;
   height: 500px;
@@ -45,7 +45,7 @@ body{
   left: 50px;
   display: block;
   position: fixed;
-  background-color: #262629;
+  background-color: white;
   border: solid black 1px;
   width: 1200px;
   height: 500px;
@@ -57,7 +57,7 @@ body{
   left: 65px;
   display: none;
   position: fixed;
-  background-color: #262629;
+  background-color: white;
   border: solid black 1px;
   width: 1200px;
   height: 500px;
