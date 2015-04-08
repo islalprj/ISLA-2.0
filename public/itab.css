@@ -1,8 +1,8 @@
-html {
+/*html {
   margin: 0px;
   height: 100%;
   width: 100%;
-}
+}*/
 .css-class-add, .css-class-remove {
   -webkit-transition:all cubic-bezier(0.250, 0.460, 0.450, 0.940) 0.5s;
   -moz-transition:all cubic-bezier(0.250, 0.460, 0.450, 0.940) 0.5s;
@@ -15,7 +15,17 @@ html {
   color: #B4A3E4;
   font-size:2em;
 }
+input[type=button] {
+    color:#08233e;
+    font:2.4em Futura, ‘Century Gothic’, AppleGothic, sans-serif;
+    font-size:70%;
+    border-radius: 5px;
+    cursor:pointer;
+}
 
+input[type=button]:hover {
+    background-color:#8A8D93;
+}
 body {
   height: 100%;
   width: 100%;
