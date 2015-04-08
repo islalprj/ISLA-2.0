@@ -14,28 +14,66 @@
   	<div class="frame" id="weather" ng-mouseenter="weatheridemenuvisable = !weatheridemenuvisable"
           ng-mouseleave="weatheridemenuvisable = false"></div>
       <div ng-init="weatheridemenuvisable=false">
-      <div class="weathersidemenu show-hideT" ng-show="weatheridemenuvisable">A monopoly on the means of communication may define a ruling elite more precisely than the celebrated Marxian formula of monopoly in the means of production.
+      <div class="weathersidemenu show-hideT" ng-show="weatheridemenuvisable">
+      <script type="text/javascript" src="http://100widgets.com/js_data.php?id=237"></script>
       </div>
 
   	<div class="frame" id="traffic" ng-mouseenter="trafficidemenuvisable = !trafficidemenuvisable"
           ng-mouseleave="trafficidemenuvisable = false"></div>
       <div ng-init="trafficidemenuvisable=false">
-      <div class="trafficsidemenu show-hideL" ng-show="trafficidemenuvisable">If one can only see things according to one's own belief system, one is destined to become virtually deaf, dumb, and blind.
+      <div class="trafficsidemenu show-hideL" ng-show="trafficidemenuvisable">
+        <table id='title' width="100%" cellspacing="2" cellpadding="2" border="0" >
+                                       <tr>
+                                       <td><h2>Ngauranga North</h2></td>    <td><h2>Ngauranga Top</h2></td>    <td><h2>Tinakori</h2></td>
+                                     </tr>
+                                       <tr valign="top">
+                                           <td width="30%"> <img border="1" src="http://www.trafficnz.info/camera/226.jpg"></td>
+                                               <td width="30%"> <img border="1" src="http://www.trafficnz.info/camera/227.jpg"></td>
+                                                   <td width="30%"> <img border="1" src="http://www.trafficnz.info/camera/230.jpg"></td>
+                                                   </tr>
+                                                   </table>
       </div>
 
   	<div class="frame" id="controller" ng-mouseenter="controlleridemenuvisable = !controlleridemenuvisable"
           ng-mouseleave="controlleridemenuvisable = false"></div>
       <div ng-init="controlleridemenuvisable=false">
-      <div class="controllersidemenu show-hideB" ng-show="controlleridemenuvisable">hi Jay, what's cracking?
+      <div class="controllersidemenu show-hideB" ng-show="controlleridemenuvisable">
+        <table width='90%' height='90%' >
+          <tr>
+            <th>Item</th>
+            <th>Status</th>
+          </tr>
+        <% @items.each do |item| %>
+        <tr>
+          <td>
+      <%= item.name %>
+          </td>
+          <% if item.on==true%>
+        <td> <img  width = '10%' src='on.png' class='button' id=<%=item.id%>> </td>
+            <% else %>
+            <td> <img  width = '10%' src='off.png' class='button' id=<%=item.id%>> </td>
+            <%end%>
+        </tr>
+      <% end %>
+    </table>
       </div>
 
   	<div class="frame" id="cams" ng-mouseenter="camsidemenuvisable = !camsidemenuvisable"
           ng-mouseleave="camsidemenuvisable = false"></div>
       <div ng-init="camsidemenuvisable=false">
-      <div class="sidemenu show-hideR" ng-show="camsidemenuvisable">All phenomena are real in some sense, unreal in some sense, meaningless in some sense, real and meaningless in some sense, unreal and meaningless in some sense, and real and unreal and meaningless in some sense.
+      <div class="sidemenu show-hideR" ng-show="camsidemenuvisable">
+        <div id='cal' style="display: inline-block; width:100%">
+       <iframe src="http://30boxes.com/widget/8490214/JayDavis/522b524c31949faae63d84fb3a37e361/1/" width="100%" height="510"></iframe>
       </div>
-      <div class="frame" id="baseDiv">The totally convinced and the totally stupid have too much in common for the resemblance to be accidental.
       </div>
+
+      <div class="frame" id="baseDiv">
+
+
+        <div id='trademe' style="display: inline-block; width:33%">
+        <iframe src="https://touch.trademe.co.nz/" width="100%" height="510"></iframe></div>
+      </div>
+
 
    <div id="fountainG">
           <div id="fountainG_1" class="fountainG">

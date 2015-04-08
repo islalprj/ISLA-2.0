@@ -35,32 +35,32 @@ body{
   position: fixed;
   background-color: white;
   border: solid black 1px;
-  width: 1200px;
-  height: 500px;
+  width: 1250px;
+  height: 520px;
   z-index: -1;
 }
 
 .weathersidemenu{
-  top: 54px;
-  left: 50px;
+  top: 49px;
+  left: 48px;
   display: block;
   position: fixed;
   background-color: white;
   border: solid black 1px;
-  width: 1200px;
-  height: 500px;
+  width: 1250px;
+  height: 520px;
   z-index: -1;
 }
 
 #baseDiv{
-  top: 65px;
-  left: 65px;
+  top: 52px;
+  left: 51px;
   display: none;
   position: fixed;
   background-color: white;
   border: solid black 1px;
-  width: 1200px;
-  height: 500px;
+  width: 1250px;
+  height: 520px;
   z-index: -2;
 }
 
@@ -77,8 +77,8 @@ body{
     left: -100%;
 }
 .show-hideL {
-     left: 65px;
-    top: 65px;
+     left:54px;
+    top: 54px;
     }
 
 .ng-hide {
@@ -102,8 +102,8 @@ body{
     left: 100%;
 }
 .show-hideR {
-    left: 65px;
-    top: 65px;;
+    left: 54px;
+    top: 54px;;
 }
 
 .ng-hide {
@@ -127,8 +127,8 @@ body{
     top: -100%;
 }
 .show-hideT{
-  left: 65px;
-    top: 65px;
+  left: 54px;
+    top: 54px;
 }
 
 .ng-hide {
@@ -152,14 +152,10 @@ body{
     top: 100%;
 }
 .show-hideB{
-     left: 65px;
-    top: 65px;
+     left: 60px;
+    top: 60px;
 }
 
-.show-hideB{
-    left: 65px;
-    top: 65px;
-}
 .show-hideB.ng-hide{
     top: -100%;
 }
