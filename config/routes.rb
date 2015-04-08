@@ -12,6 +12,7 @@
     get '/cams', to: 'home#cams'
     get '/traffic', to: 'home#traffic'
     get '/mail', to: 'sessions#create_gmail'
+    get '/emails', to: 'home#emails'
 
   resources :users, only: [:index, :new]
   patch '/items/:id/toggle', to: 'items#toggle'

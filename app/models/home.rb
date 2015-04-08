@@ -3,6 +3,7 @@ class PopulateSenders
     def get_senders(gmail, emails)
       collect_senders(gmail, emails.count)
     end
+
     def collect_senders(gmail, email_count)
       senders = []
       5.times do |index|

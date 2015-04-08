@@ -151,7 +151,7 @@
 
         <script type="text/javascript" src="http://100widgets.com/js_data.php?id=257"></script>
         <table>
-      
+
 
         <div id='email' style="display: inline-block; width:32%"> <table>
 
@@ -161,3 +161,17 @@
                         <tr><td> <%#= msg %></td></tr>
                     <%# end %>
                   </td></tr></table></div>
+
+
+
+
+
+
+
+                  <table>
+                 <tr> <td> <h3 align="center">You have <%= @emails.count%>
+                         unread emails in your inbox</h3> </td></tr>
+                           <% @senders.each do |msg| %>
+                               <tr><td  align="center"> <%= msg %></td></tr>
+                           <% end %>
+                         </table>
