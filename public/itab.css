@@ -26,10 +26,10 @@ input[type=button] {
 input[type=button]:hover {
     background-color:#8A8D93;
 }
-.bigTabs:active{
+/*.bigTabs:hover{
   height: 100%;
   width: 100%;
-}
+}*/
 body {
   height: 100%;
   width: 100%;
