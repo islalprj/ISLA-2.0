@@ -1,7 +1,54 @@
 body{
    background-color: #0B0B12;
 }
+.css-class-add, .css-class-remove {
+  -webkit-transition:all cubic-bezier(0.250, 0.460, 0.450, 0.940) 0.5s;
+  -moz-transition:all cubic-bezier(0.250, 0.460, 0.450, 0.940) 0.5s;
+  -o-transition:all cubic-bezier(0.250, 0.460, 0.450, 0.940) 0.5s;
+  transition:all cubic-bezier(0.250, 0.460, 0.450, 0.940) 0.5s;
+}
 
+.css-class,
+.css-class-add.css-class-add-active {
+  color: #B4A3E4;
+  font-size:2em;
+}
+input[type=button] {
+    color:#08233e;
+    font:2.4em Futura, ‘Century Gothic’, AppleGothic, sans-serif;
+    font-size:70%;
+    border-radius: 5px;
+    cursor:pointer;
+}
+
+input[type=button]:hover {
+    background-color:#8A8D93;
+}
+
+
+
+header{
+  text-align:center;
+  color:#330C9F;
+}
+
+.bigTabs{
+  margin-left:2%;
+  border-radius: 25px;
+  text-align:center;
+  background:#330C9F;
+  color:#B4A3E4;
+}
+.bottom{
+  margin-left:2%;
+  border-radius: 25px;
+  text-align:center;
+  background:#330C9F;
+  color:#B4A3E4;
+}
+.breaker{
+  height: 1em;
+}
 .sidemenu{
   top: 54px;
   left: 50px;
