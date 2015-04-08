@@ -12,18 +12,15 @@
     </tr>
   <% @items.each do |item| %>
   <tr>
-    <td>
-<%= item.name %>
-    </td>
+    <td><%= item.name %></td>
     <% if item.on==true%>
   <td> <img  width = '10%' src='on.png' class='button' id=<%=item.id%>> </td>
-    <td>
       <% else %>
       <td> <img  width = '10%' src='off.png' class='button' id=<%=item.id%>> </td>
       <%end%>
-    </td>
   </tr>
 <% end %>
+</table>
 <tr id="navigation">
   <td height="100px"><%= link_to image_tag("http://auclc.com/Home_Button.png", :height=>100), {:controller => 'home', :action => "index" } %></td>
   <td height="100px"><%= link_to image_tag("https://cdn2.iconfinder.com/data/icons/plump-by-zerode_/256/Control-Panel-icon.png", :height=>100), {:controller => 'home', :action => "control" } %></td>
