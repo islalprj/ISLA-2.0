@@ -17,7 +17,7 @@ ready(function () {
 
 	setTimeout(function(){
 	document.getElementById('fountainG').style.display = "none";
-	},3000);
+	},10000);
 	setTimeout(function(){
 	document.getElementById('controller').style.display = "block";
 	document.getElementById('weather').style.display = "block";
@@ -25,7 +25,7 @@ ready(function () {
 	document.getElementById('cams').style.display = "block";
 	document.getElementById('baseDiv').style.display = "block";
 	
-	},3000);
+	},10000);
 
 	console.log('whoa!')
 })
