@@ -26,6 +26,16 @@ input[type=button] {
 input[type=button]:hover {
     background-color:#8A8D93;
 }
+.bigTabs:hover{
+  /*background-color:#8A8D93;*/
+  height: 100%;
+  width: 100%;
+  /*margin-left:2%;
+  border-radius: 25px;
+  text-align:center;
+  background:#330C9F;
+  color:#B4A3E4;*/
+}
 body {
   height: 100%;
   width: 100%;
