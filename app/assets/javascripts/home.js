@@ -54,7 +54,7 @@ request.send();
 
 	setTimeout(function(){
 	document.getElementById('fountainG').style.display = "none";
-},22000);
+},31000);
 	setTimeout(function(){
 	document.getElementById('controller').style.display = "block";
 	document.getElementById('weather').style.display = "block";
@@ -63,7 +63,7 @@ request.send();
   document.getElementById('baseDiv').style.display = "block";
 
 
-},22050);
+},31050);
 
 	console.log('whoa!')
 });
