@@ -23,8 +23,11 @@ ready(function () {
 	document.getElementById('weather').style.display = "block";
 	document.getElementById('traffic').style.display = "block";
 	document.getElementById('cams').style.display = "block";
+  document.getElementById('baseDiv').style.display = "block";
 
 },5000);
+
+
 
 	console.log('whoa!');
 });

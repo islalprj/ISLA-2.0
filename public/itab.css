@@ -1,15 +1,12 @@
-
 body{
    background-color: #0B0B12;
 }
-
-
 
 .sidemenu{
   top: 54px;
   left: 50px;
   position: fixed;
-  background-color: white;
+  background-color: #6D6D74;
   border: solid black 1px;
   width: 1200px;
   height: 500px;
@@ -21,7 +18,7 @@ body{
   left: 50px;
   display: block;
   position: fixed;
-  background-color: white;
+  background-color: #262629;
   border: solid black 1px;
   width: 1200px;
   height: 500px;
@@ -33,7 +30,7 @@ body{
   left: 50px;
   display: block;
   position: fixed;
-  background-color: white;
+  background-color: #262629;
   border: solid black 1px;
   width: 1200px;
   height: 500px;
@@ -45,7 +42,7 @@ body{
   left: 50px;
   display: block;
   position: fixed;
-  background-color: white;
+  background-color: #262629;
   border: solid black 1px;
   width: 1200px;
   height: 500px;
@@ -57,7 +54,7 @@ body{
   left: 65px;
   display: none;
   position: fixed;
-  background-color: white;
+  background-color: #262629;
   border: solid black 1px;
   width: 1200px;
   height: 500px;
@@ -65,14 +62,14 @@ body{
 }
 
 .show-hideL
-{ 
+{
     -webkit-transition: 1475ms cubic-bezier(0.165, 0.840, 0.440, 1.000) all;
     -moz-transition: 1475ms cubic-bezier(0.165, 0.840, 0.440, 1.000) all;
     -ms-transition: 1475ms cubic-bezier(0.165, 0.840, 0.440, 1.000) all;
     -o-transition: 1475ms cubic-bezier(0.165, 0.840, 0.440, 1.000) all;
     transition: 1475ms cubic-bezier(0.165, 0.840, 0.440, 1.000) all;
-} 
- 
+}
+
 .show-hideL {
     left: -100%;
 }
@@ -80,7 +77,7 @@ body{
      left: 65px;
     top: 65px;
     }
- 
+
 .ng-hide {
      left: 65px;
     top: 65px;
@@ -90,14 +87,14 @@ body{
 }
 
 .show-hideR
-{ 
+{
     -webkit-transition: 1475ms cubic-bezier(0.165, 0.840, 0.440, 1.000) all;
     -moz-transition: 1475ms cubic-bezier(0.165, 0.840, 0.440, 1.000) all;
     -ms-transition: 1475ms cubic-bezier(0.165, 0.840, 0.440, 1.000) all;
     -o-transition: 1475ms cubic-bezier(0.165, 0.840, 0.440, 1.000) all;
     transition: 1475ms cubic-bezier(0.165, 0.840, 0.440, 1.000) all;
-} 
- 
+}
+
 .show-hideR {
     left: 100%;
 }
@@ -105,7 +102,7 @@ body{
     left: 65px;
     top: 65px;;
 }
- 
+
 .ng-hide {
     left: 65px;
     top: 65px;
@@ -115,14 +112,14 @@ body{
 }
 
 .show-hideT
-{ 
+{
     -webkit-transition: 1475ms cubic-bezier(0.165, 0.840, 0.440, 1.000) all;
     -moz-transition: 1475ms cubic-bezier(0.165, 0.840, 0.440, 1.000) all;
     -ms-transition: 1475ms cubic-bezier(0.165, 0.840, 0.440, 1.000) all;
     -o-transition: 1475ms cubic-bezier(0.165, 0.840, 0.440, 1.000) all;
     transition: 1475ms cubic-bezier(0.165, 0.840, 0.440, 1.000) all;
-} 
- 
+}
+
 .show-hideT {
     top: -100%;
 }
@@ -130,7 +127,7 @@ body{
   left: 65px;
     top: 65px;
 }
- 
+
 .ng-hide {
     left: 65px;
     top: 65px;
@@ -140,14 +137,14 @@ body{
 }
 
 .show-hideB
-{ 
+{
     -webkit-transition: 1475ms cubic-bezier(0.165, 0.840, 0.440, 1.000) all;
     -moz-transition: 1475ms cubic-bezier(0.165, 0.840, 0.440, 1.000) all;
     -ms-transition: 1475ms cubic-bezier(0.165, 0.840, 0.440, 1.000) all;
     -o-transition: 1475ms cubic-bezier(0.165, 0.840, 0.440, 1.000) all;
     transition: 1475ms cubic-bezier(0.165, 0.840, 0.440, 1.000) all;
-} 
- 
+}
+
 .show-hideB {
     top: 100%;
 }
@@ -155,7 +152,7 @@ body{
      left: 65px;
     top: 65px;
 }
- 
+
 .show-hideB{
     left: 65px;
     top: 65px;
@@ -205,7 +202,7 @@ border: 1px solid black;
   width: 0;
   border-right:50px solid #0c0c0f;
   border-top: 50px solid transparent;
-  border-bottom: 50px solid transparent; 
+  border-bottom: 50px solid transparent;
   margin-left: 1276px;
   margin-top: 3px;
 }
@@ -217,7 +214,7 @@ border: 1px solid black;
   width: 0;
   border-left:50px solid #6D6D74;
   border-top: 50px solid transparent;
-  border-bottom: 50px solid transparent; 
+  border-bottom: 50px solid transparent;
   margin-left: 1px;
   margin-top: 3px;
 
