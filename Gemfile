@@ -7,7 +7,7 @@ gem 'omniauth-google-oauth2', '~> 0.2.1'
 gem 'gmail_xoauth'
 gem 'gmail'
 gem 'koala'
-gem 'pure-css-rails'
+
 
 source 'https://rails-assets.org' do
   gem 'rails-assets-angular'

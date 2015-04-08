@@ -14,7 +14,7 @@
   <div class="field">
     <%= f.label :password %>
     <% if @validatable %>
-    <em>(<%= @minimum_password_length %> character minimum)</em>
+    <em>(6 character minimum)</em>
     <% end %><br />
     <%= f.password_field :password, autocomplete: "off" %>
   </div>
