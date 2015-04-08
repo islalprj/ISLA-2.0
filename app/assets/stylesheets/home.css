@@ -222,6 +222,15 @@ border: 1px solid black;
 
 }
 
+#signing{
+  text-align: center;
+  color: #6A6B6B;
+  align-content: center;
+  font-size: 25px;
+
+
+}
+
 
 #fountainG{
 display:block;
