@@ -13,7 +13,8 @@
     get '/traffic', to: 'home#traffic'
     get '/mail', to: 'sessions#create_gmail'
 
-    patch '/items/:id/toggle', to: 'items#toggle'
+  resources :users, only: [:index, :new]
+  patch '/items/:id/toggle', to: 'items#toggle'
 
     unauthenticated do
       devise_scope :user do
