@@ -14,20 +14,20 @@ h1{
   position: fixed;
   background-color: white;
   border: solid black 1px;
-  width: 1200px;
-  height: 500px;
+  width: 1250px;
+  height: 520px;
    z-index: -1;
 }
 
 .controllersidemenu{
-  top: 54px;
+  top: 50px;
   left: 50px;
   display: block;
   position: fixed;
   background-color: white;
   border: solid black 1px;
-  width: 1200px;
-  height: 500px;
+  width: 1250px;
+  height: 520px;
   z-index: -1;
 }
 
@@ -44,8 +44,8 @@ h1{
 }
 
 .weathersidemenu{
-  top: 49px;
-  left: 48px;
+  top: 54px;
+  left: 50px;
   display: block;
   position: fixed;
   background-color: white;
@@ -155,8 +155,8 @@ h1{
     top: 100%;
 }
 .show-hideB{
-     left: 60px;
-    top: 60px;
+     left: 54px;
+    top: 54px;
 }
 
 .show-hideB.ng-hide{
@@ -177,7 +177,7 @@ border: 1px solid black;
   margin-left:auto;
   margin-right: auto;
   margin-top:574px;
-  border-bottom: 50px solid #4b4b50;
+  border-bottom: 50px solid #6A6B6B;
   border-left: 50px solid transparent;
   border-right: 50px solid transparent;
   height: 0;
@@ -190,7 +190,7 @@ border: 1px solid black;
   margin-left:auto;
   margin-right: auto;
   margin-top:2px;
-  border-top: 50px solid #4b4b50;
+  border-top: 50px solid #48484A;
   border-left: 50px solid transparent;
   border-right: 50px solid transparent;
   height: 0;
@@ -202,7 +202,7 @@ border: 1px solid black;
   display: none;
   height: 520px;
   width: 0;
-  border-right:50px solid #0c0c0f;
+  border-right:50px solid #1E1E1D;
   border-top: 50px solid transparent;
   border-bottom: 50px solid transparent;
   margin-left: 1276px;
@@ -214,7 +214,7 @@ border: 1px solid black;
   display: none;
   height: 520px;
   width: 0;
-  border-left:50px solid #6D6D74;
+  border-left:50px solid #F2F4F7;
   border-top: 50px solid transparent;
   border-bottom: 50px solid transparent;
   margin-left: 1px;
