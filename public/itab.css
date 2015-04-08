@@ -26,7 +26,7 @@ input[type=button] {
 input[type=button]:hover {
     background-color:#8A8D93;
 }
-.bigTabs:hover{
+.bigTabs:active{
   /*background-color:#8A8D93;*/
   height: 100%;
   width: 100%;
