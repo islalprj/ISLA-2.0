@@ -11,18 +11,17 @@
 
   	<div class="front-page" id="musicplayer"></div>
 
-  	<div class="frame" id="weather" ng-mouseenter="weatheridemenuvisable = !weatheridemenuvisable"
-          ng-mouseleave="weatheridemenuvisable = false"></div>
+  	<div class="frame" id="weather" ng-mouseenter="weatheridemenuvisable = !weatheridemenuvisable"></div>
       <div ng-init="weatheridemenuvisable=false">
-      <div class="weathersidemenu show-hideT" ng-show="weatheridemenuvisable">
+      <div class="weathersidemenu show-hideT" ng-show="weatheridemenuvisable"  ng-mouseleave="weatheridemenuvisable = false">
       <script type="text/javascript" src="http://100widgets.com/js_data.php?id=237"></script>
       <h1>Isla weather report</h1>
       </div>
 
   	<div class="frame" id="traffic" ng-mouseenter="trafficidemenuvisable = !trafficidemenuvisable"
-          ng-mouseleave="trafficidemenuvisable = false"></div>
+    ></div>
       <div ng-init="trafficidemenuvisable=false">
-      <div class="trafficsidemenu show-hideL" ng-show="trafficidemenuvisable">
+      <div class="trafficsidemenu show-hideL" ng-show="trafficidemenuvisable"      ng-mouseleave="trafficidemenuvisable = false">
         <table id='title' width="100%" cellspacing="2" cellpadding="2" border="0" >
                                        <tr>
                                        <td><h2>Ngauranga North</h2></td>    <td><h2>Ngauranga Top</h2></td>    <td><h2>Tinakori</h2></td>
@@ -37,9 +36,9 @@
       </div>
 
   	<div class="frame" id="controller" ng-mouseenter="controlleridemenuvisable = !controlleridemenuvisable"
-          ng-mouseleave="controlleridemenuvisable = false"></div>
+      ></div>
       <div ng-init="controlleridemenuvisable=false">
-      <div class="controllersidemenu show-hideB" ng-show="controlleridemenuvisable">
+      <div class="controllersidemenu show-hideB" ng-show="controlleridemenuvisable"    ng-mouseleave="controlleridemenuvisable = false">
         <table width='90%'>
           <tr>
             <th>Item</th>
@@ -59,9 +58,9 @@
       </div>
 
   	<div class="frame" id="cams" ng-mouseenter="camsidemenuvisable = !camsidemenuvisable"
-          ng-mouseleave="camsidemenuvisable = false"></div>
+      ></div>
       <div ng-init="camsidemenuvisable=false">
-      <div class="sidemenu show-hideR" ng-show="camsidemenuvisable">
+      <div class="sidemenu show-hideR" ng-show="camsidemenuvisable"    ng-mouseleave="camsidemenuvisable = false">
         <div id='cal' style="display: inline-block; width:100%">
        <iframe src="http://30boxes.com/widget/8490214/JayDavis/522b524c31949faae63d84fb3a37e361/1/" width="100%" height="510"></iframe>
       </div>
